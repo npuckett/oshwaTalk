@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSHWA Show and Tell</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.4;
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 8rem);
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            margin-bottom: 2rem;
+            line-height: 0.9;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 5vw, 5rem);
+            font-weight: 800;
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            border-bottom: 8px solid #fff;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 3rem);
+            font-weight: 700;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        h4 {
+            font-size: clamp(1.2rem, 2vw, 2rem);
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        li {
+            font-size: clamp(1rem, 1.5vw, 1.5rem);
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "■";
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        ul ul {
+            margin-top: 1rem;
+            margin-left: 2rem;
+        }
+
+        ul ul li {
+            font-size: clamp(0.9rem, 1.3vw, 1.3rem);
+            margin: 1rem 0;
+        }
+
+        ul ul li::before {
+            content: "□";
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 3px solid #fff;
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        a:hover {
+            background: #fff;
+            color: #000;
+            padding: 4px 8px;
+            margin: -4px -8px;
+        }
+
+        .subtitle {
+            font-size: clamp(1.5rem, 3vw, 3rem);
+            font-weight: 300;
+            margin-bottom: 4rem;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 6rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 4px solid #fff;
+            margin: 4rem 0;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <h1>OSHWA<br>Show and Tell</h1>
+    <p class="subtitle">Open Source Tools for Teaching Creative Technology at Scale</p>
+
+    <div class="section">
+        <h2>Who am I?</h2>
+        <ul>
+            <li><strong>Nick Puckett</strong>
+                <ul>
+                    <li>Associate Professor, Digital Futures @ OCADU</li>
+                    <li>Co-director of the <a href="https://socialbodylab.com/" target="_blank" rel="noopener noreferrer">Social Body Lab</a></li>
+                    <li><a href="https://puckettrand.com/" target="_blank" rel="noopener noreferrer">Puckett Research & Design</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>Where did this start for me?</h2>
+        
+        <h3>Public Spaces - Public Code</h3>
+        <ul>
+            <li><a href="https://npuckett.github.io/firstWebsite/menu/" target="_blank" rel="noopener noreferrer">My first Website</a></li>
+            <li><a href="https://github.com/npuckett/npuckett.github.io/tree/master/firstWebsite" target="_blank" rel="noopener noreferrer">Code link</a></li>
+        </ul>
+        
+        <iframe src="https://npuckett.github.io/firstWebsite/menu/" 
+                style="width: 80%; height: 800px; border: none; margin-top: 2rem; background: #fff;"
+                title="My First Website">
+        </iframe>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>Class Tools → Public tools</h2>
+        <p class="subtitle" style="font-size: clamp(1rem, 2vw, 2rem); margin-top: 1rem;">(aka teaching is testing)</p>
+
+        <h3>Open Distribution</h3>
+        <ul>
+            <li><a href="https://github.com/DigitalFuturesOCADU/AltController" target="_blank" rel="noopener noreferrer">AltController</a></li>
+            <li><a href="https://github.com/DigitalFuturesOCADU/TinyFilmFestival" target="_blank" rel="noopener noreferrer">TinyFilmFestival</a></li>
+            <li><a href="https://github.com/DigitalFuturesOCADU/YouveBeenNotified" target="_blank" rel="noopener noreferrer">YouveBeenNotified</a></li>
+            <li><a href="https://github.com/npuckett/WebGUI" target="_blank" rel="noopener noreferrer">WebGUI</a></li>
+        </ul>
+
+        <h3>The Arduino Library</h3>
+        <ul>
+            <li><a href="https://thearduinolibrary.com/" target="_blank" rel="noopener noreferrer">thearduinolibrary.com</a></li>
+            <li><a href="https://github.com/npuckett/arduino-libBrowser" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+        </ul>
+
+        <h3>Preposition Programming</h3>
+        <ul>
+            <li><a href="https://prepositionprogramming.com/" target="_blank" rel="noopener noreferrer">prepositionprogramming.com</a></li>
+            <li><a href="https://github.com/npuckett/preposition-programming" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+        </ul>
+
+        <h3>P5 Phone</h3>
+        <ul>
+            <li><a href="https://github.com/DigitalFuturesOCADU/P5-Phone-Interactions" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+            <li><a href="https://digitalfuturesocadu.github.io/P5-Phone-Interactions/examples/homepage/" target="_blank" rel="noopener noreferrer">Examples Homepage</a></li>
+            <li><a href="https://digitalfuturesocadu.github.io/mobile-p5-permissions/" target="_blank" rel="noopener noreferrer">Mobile P5 Permissions</a></li>
+        </ul>
+    </div>
+</body>
+</html>
